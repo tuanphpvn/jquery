@@ -739,7 +739,7 @@ QUnit.test( ".removeData should not throw exceptions. (#10080)", function( asser
 	} );
 
 	// change the url to trigger unload
-	frame.attr( "src", "data/iframe.html?param=true" );
+	frame.attr( "src", "test/data/iframe.html?param=true" );
 } );
 
 QUnit.test( ".data only checks element attributes once. #8909", function( assert ) {
@@ -821,7 +821,7 @@ QUnit.test( "Check proper data removal of non-element descendants nodes (#8335)"
 
 testIframeWithCallback(
 	"enumerate data attrs on body (#14894)",
-	"data/dataAttrs.html",
+	"test/data/dataAttrs.html",
 	function( result, assert ) {
 		assert.expect( 1 );
 		assert.equal( result, "ok", "enumeration of data- attrs on body" );

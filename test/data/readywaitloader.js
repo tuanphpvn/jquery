@@ -20,6 +20,6 @@ setTimeout( function() {
 	} else {
 		script.attachEvent( "onreadystatechange", assetLoaded );
 	}
-	script.src = "data/readywaitasset.js";
+	script.src = "test/data/readywaitasset.js";
 	document.getElementsByTagName( "head" )[ 0 ].appendChild( script );
 }, 2000 );

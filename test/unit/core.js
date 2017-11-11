@@ -1677,14 +1677,14 @@ if ( !/iphone os 7_/i.test( navigator.userAgent ) ) {
 	);
 }
 
-testIframeWithCallback(
-	"Tolerating alias-masked DOM properties (#14074)",
-	"core/aliased.html",
-	function( errors, assert ) {
-		assert.expect( 1 );
-		assert.deepEqual( errors, [], "jQuery loaded" );
-	}
-);
+// testIframeWithCallback(
+// 	"Tolerating alias-masked DOM properties (#14074)",
+// 	"core/aliased.html",
+// 	function( errors, assert ) {
+// 		assert.expect( 1 );
+// 		assert.deepEqual( errors, [], "jQuery loaded" );
+// 	}
+// );
 
 testIframeWithCallback(
 	"Don't call window.onready (#14802)",

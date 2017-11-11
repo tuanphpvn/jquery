@@ -45,9 +45,9 @@ testIframeWithCallback(
 		assert.expect( 2 );
 		assert.deepEqual( jQuery.extend( {}, support ), computedSupport, "No violations of CSP polices" );
 
-		supportjQuery.get( "data/support/csp.log" ).done( function( data ) {
+		supportjQuery.get( "test/data/support/csp.log" ).done( function( data ) {
 			assert.equal( data, "", "No log request should be sent" );
-			supportjQuery.get( "data/support/csp-clean.php" ).done( done );
+			supportjQuery.get( "test/data/support/csp-clean.php" ).done( done );
 		} );
 	}
 );

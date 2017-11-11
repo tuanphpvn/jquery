@@ -330,14 +330,14 @@ url( "some/url.php" );
 Example:
 
 ```js
-url("data/test.html");
+url("test/data/test.html");
 
-=> "data/test.html?10538358428943"
+=> "test/data/test.html?10538358428943"
 
 
-url("data/test.php?foo=bar");
+url("test/data/test.php?foo=bar");
 
-=> "data/test.php?foo=bar&10538358345554"
+=> "test/data/test.php?foo=bar&10538358345554"
 ```
 
 

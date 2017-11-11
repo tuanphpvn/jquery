@@ -125,11 +125,11 @@ fireNative = document.createEvent ?
 /**
  * Add random number to url to stop caching
  *
- * @example url("data/test.html")
- * @result "data/test.html?10538358428943"
+ * @example url("test/data/test.html")
+ * @result "test/data/test.html?10538358428943"
  *
- * @example url("data/test.php?foo=bar")
- * @result "data/test.php?foo=bar&10538358345554"
+ * @example url("test/data/test.php?foo=bar")
+ * @result "test/data/test.php?foo=bar&10538358345554"
  */
 function url( value ) {
 	return baseURL + value + ( /\?/.test( value ) ? "&" : "?" ) +
@@ -260,7 +260,7 @@ this.testIframeWithCallback = function( title, fileName, func ) {
 			} );
 		};
 		iframe = jQuery( "<div/>" ).css( { position: "absolute", width: "500px", left: "-600px" } )
-			.append( jQuery( "<iframe/>" ).attr( "src", url( "./data/" + fileName ) ) )
+			.append( jQuery( "<iframe/>" ).attr( "src", url( "./test/data/" + fileName ) ) )
 			.appendTo( "#qunit-fixture" );
 	} );
 };
