@@ -4,26 +4,26 @@
 	<meta charset="utf-8">
 	<title>jQuery Test Suite</title>
 	<link rel="stylesheet" href="../external/qunit/qunit.css" />
-	<link rel="stylesheet" href="data/testsuite.css" />
+	<link rel="stylesheet" href="./test/data/testsuite.css" />
 
 	<!--
 		We have to use previous jQuery as helper to ensure testability with
 		ajax-free builds (and non-interference when changing ajax internals)
 	-->
-	<script src="data/jquery-1.9.1.js"></script>
+	<script src="./test/data/jquery-1.9.1.js"></script>
 
 	<script src="../external/qunit/qunit.js"></script>
 	<script src="../external/qunit-assert-step/qunit-assert-step.js"></script>
 	<script src="../external/sinon/sinon-1.14.1.js"></script>
 	<script src="../external/requirejs/require.js"></script>
 	<!-- See testinit for the list of tests -->
-	<script src="data/testinit.js"></script>
+	<script src="./test/data/testinit.js"></script>
 
 	<!-- A script that includes jQuery min, dev, or AMD -->
 	<!-- Adds "basic" URL option, even to iframes -->
 	<!-- iframes will not load AMD as loading needs to be synchronous for some tests -->
 	<!-- Also executes the function above to load tests -->
-	<script src="jquery.js"></script>
+	<script src="./test/jquery.js"></script>
 
 	<script>
 		// Load tests if they have not been loaded
@@ -40,7 +40,7 @@
 
 	<!-- Test HTML -->
 	<!-- this iframe is outside the #qunit-fixture so it won't reload constantly wasting time, but it means the tests must be "safe" and clean up after themselves -->
-	<iframe id="loadediframe" name="loadediframe" style="display:none;" src="data/iframe.html"></iframe>
+	<iframe id="loadediframe" name="loadediframe" style="display:none;" src="./test/data/iframe.html"></iframe>
 	<dl id="dl" style="position:absolute;top:-32767px;left:-32767px;width:1px;">
 	<div id="donor-outer">
 		<form id="donor-form">

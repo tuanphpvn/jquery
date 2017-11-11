@@ -275,7 +275,7 @@ this.loadTests = function() {
 		basicTests = ( QUnit.urlParams[ "module" ] + "" ) === "basic";
 
 	// Get testSubproject from testrunner first
-	require( [ "data/testrunner.js" ], function() {
+	require( [ "test/data/testrunner.js" ], function() {
 		var i = 0,
 			tests = [
 
@@ -283,27 +283,27 @@ this.loadTests = function() {
 				// not fully supported environments like Android 2.3,
 				// jsdom or PhantomJS. We run it everywhere, though,
 				// to make sure tests are not broken.
-				"unit/basic.js",
+				"test/unit/basic.js",
 
-				"unit/core.js",
-				"unit/callbacks.js",
-				"unit/deferred.js",
-				"unit/deprecated.js",
-				"unit/support.js",
-				"unit/data.js",
-				"unit/queue.js",
-				"unit/attributes.js",
-				"unit/event.js",
-				"unit/selector.js",
-				"unit/traversing.js",
-				"unit/manipulation.js",
-				"unit/wrap.js",
-				"unit/css.js",
-				"unit/serialize.js",
-				"unit/ajax.js",
-				"unit/effects.js",
-				"unit/offset.js",
-				"unit/dimensions.js"
+				"test/unit/core.js",
+				"test/unit/callbacks.js",
+				"test/unit/deferred.js",
+				"test/unit/deprecated.js",
+				"test/unit/support.js",
+				"test/unit/data.js",
+				"test/unit/queue.js",
+				"test/unit/attributes.js",
+				"test/unit/event.js",
+				"test/unit/selector.js",
+				"test/unit/traversing.js",
+				"test/unit/manipulation.js",
+				"test/unit/wrap.js",
+				"test/unit/css.js",
+				"test/unit/serialize.js",
+				"test/unit/ajax.js",
+				"test/unit/effects.js",
+				"test/unit/offset.js",
+				"test/unit/dimensions.js"
 			];
 
 		// Ensure load order (to preserve test numbers)
